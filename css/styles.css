@@ -1,0 +1,93 @@
+* {
+
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+   
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Aplica a todo el documento */
+  }
+
+.fw-900 {
+    font-weight: 900; /* Grosor "bold" */
+  }
+
+
+
+ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+header {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    background-color: #1f2937; /* Fondo oscuro para el header */
+    padding: 0 20px; /* Espacio a los lados del header */
+}
+
+.contenido-header {
+    display: flex; /* Flexbox para organizar los elementos internos */
+    flex: 1; /* Permite que el contenedor ocupe todo el espacio disponible */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.contenido-header h1{
+    font-size: 24px;
+    color: white;
+}
+
+
+.navegacion-header ul {
+    display: flex; /* Coloca los elementos del menú en una fila */
+    gap: 25px; /* Espacio entre los elementos del menú */
+    padding-right: 40px;
+}
+
+.contenido-header a{
+    padding-left: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.contenido-header a:hover{
+    color: #3882F6;
+    transform: scale(1.05);
+}
+
+
+.contenedor-sm {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px; /* Espacio a los lados del contenedor */
+    background-color: #1f2937;      
+}
+
+.contenedor-sm h2 {
+    color: white;
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.contenedor-sm p{
+    color: #E5E7EB;
+    width: 900px;
+    font-size: 17px;
+}
+
+.contenedor-sm img {
+    height: auto;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #3882F6;
+}
