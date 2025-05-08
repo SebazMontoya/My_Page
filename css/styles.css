@@ -1,28 +1,31 @@
 * {
-  
+    
     margin: 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina rellenos predeterminados */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
    
 }
 
-body {
-    font-family: 'Roboto', sans-serif; /* Aplica a todo el documento */
-  }
-
 .fw-900 {
     font-weight: 900; /* Grosor "bold" */
   }
 
+
+body {
+    font-family: 'Roboto', sans-serif; /* Aplica a todo el documento */
+  }
+
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
 
 
 .contenido-header ul {
     list-style: none; /* Elimina los estilos de lista predeterminados */
 }
 
-a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
+
 
 header {
     display: flex; /* Usa flexbox para organizar los elementos */
@@ -55,6 +58,7 @@ header {
     padding-left: 30px;
     font-size: 18px;
     color: white;
+    transition: 0.3s;
 }
 
 .navegacion-header a:hover{
@@ -79,7 +83,7 @@ header {
 }
 
 .contenedor-sm h2 {
-    color: white;
+    color: #E5E7EB;
     font-size: 48px;
     padding-bottom: 10px;
 }
@@ -88,8 +92,31 @@ header {
     color: #E5E7EB;
     width: 900px;
     font-size: 17px;
-    
     margin-bottom: 15px;
+}
+
+.descargar-hv {
+    margin-top: 40px;
+    
+}
+
+.descargar-hv a {
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.descargar-hv a:hover{
+    background-color: #1f60b9;
+    
+    transform: scale(1.05);
+}
+
+.descargar-hv i {
+    font-size: 20px;
+    color: #E5E7EB;
+    margin: 10px;
 }
 
 .contenedor-sm .sobre-mi img {
@@ -108,11 +135,20 @@ header {
     margin-right: 190px;
 }
 
-.perfil-pro img{
+
+.perfil-pro i {
+    font-size: 2rem;
+    color: #E5E7EB;
+    transition: 0.3s;
     width: 40px;
     height: auto;
     margin-bottom: 30px;
-}
+  }
+  .perfil-pro i:hover {
+    color:#3882F6; 
+    transform: scale(1.1);
+  }
+
 
 
 
@@ -138,27 +174,40 @@ header {
     border-radius: 10px;
 }
 
-
-.sobre-ed{
-    padding: 0px 200px;
-    display: flex;
-}
-
-.sobre-ed img{
-    width: 40px;
-    height: auto;
-    padding-bottom: 10px;
-}
-
-
 .tarjeta-ed {
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: 0.3s;
+    
 }
 
 .tarjeta-ed:hover {
     transform: scale(1.02); /* Efecto de zoom al pasar el cursor */
 }
+
+
+.sobre-ed{
+    padding: 0px 200px;
+    display: flex;
+    display: none; /* Oculto por defecto */
+}
+
+.sobre-ed img{
+    width: 30px;
+    height: auto;
+    padding-bottom: 10px;
+    margin-right: 20px;
+
+}
+
+.sobre-ed.activo {
+    display: block; /* Mostrar cuando tiene clase activo */
+    padding: 0px 200px;
+    display: flex;
+
+}
+
+
+
 
 
 /*Contenedor tecnologías*/
@@ -177,7 +226,6 @@ header {
 }
 
 .tarjeta-contenedor {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -191,7 +239,14 @@ header {
     width:200px;
     border-radius: 10px;
     padding: 20px;
-    
+    transition: 0.2s;
+    margin-bottom: 10px;
+
+
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px)scale(1.05)rotate(2deg)
 }
 
 .tarjeta img {
@@ -225,12 +280,30 @@ header {
     padding: 20px;
 }
 
+
 .tarjeta-pr img {
     width: 300px;
     height: auto;
 }
 
+.tarjeta-pr h3{
+    margin: 10px 0 10px 0;
+}
 
+.tarjeta-pr p {
+    margin-bottom: 5px;
+}
+
+.tarjeta-pr a{
+    color: #3882F6;
+    cursor: pointer;
+   
+}
+
+.tarjeta-pr a:hover {
+    color: #1f2937;
+    text-decoration: underline;
+}
 
 
 /*Contenedor contacto*/
@@ -265,14 +338,24 @@ header {
     display: flex;
     gap: 50px;
     flex-direction: row;
-    align-items: center;}
+    align-items: center;
+    margin-top: 40px;
+}
 
-.btn img {
-    width: 60px;
-    height: 60px;
-    
+.btn i {
+    font-size: 2rem;
+    color: #1f2937;
+    transition: 0.3s;
+    font-size: 60px;
+    margin-bottom: 30px;
   }
-  
+
+.btn i:hover {
+    color:#3882F6; 
+    transform: scale(1.1);
+  }
+
+
 
 
 

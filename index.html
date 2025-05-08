@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="contenido-header">
@@ -31,19 +32,25 @@
             <div class="sobre-mi">
                 <div>
                     <h2 class="fw-900">Sobre Mí</h2>
-                    <p>Hola, soy Sebastián, Ingeniero de Sistemas con formación en desarrollo web Full Stack. Me encuentro en la etapa inicial de mi carrera profesional y estoy enfocado en crecer como desarrollador junior. Me apasiona la tecnología y la creación de soluciones innovadoras que generen valor real para las personas y las organizaciones. </p>
-                    <p>Mi objetivo es integrarme a un equipo donde pueda seguir aprendiendo, aportar con compromiso y evolucionar profesionalmente en el mundo del desarrollo de software.</p>
+                    <p>Hola, soy Sebastián, Ingeniero de Sistemas y desarrollador web Full Stack. Me encuentro en la etapa inicial de mi carrera profesional y estoy enfocado en crecer como desarrollador junior. Me apasiona la tecnología y la creación de soluciones innovadoras que generen valor real para las personas y las organizaciones. </p>
+                    <p>Mi objetivo es integrarme a un equipo donde pueda seguir aprendiendo, aportar con compromiso y desarrollarme profesionalmente en el mundo del desarrollo de software.</p>
+                    <div class="descargar-hv">
+                        <a href="">Descargar HV<i class="fa-solid fa-download"></i></a>
+                    </div>
+                    
                 </div>
                 <div>
                     <img src="img/img-1.jpg" width="300" height="350" alt="about-me" >
                 </div>
             </div>
             <div class="perfil-pro">
-                <a href="https://github.com/SebazMontoya" target="_blank"><img src="img/img-gh.png" alt="GitHub" ></a>
-                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-montoya-a2709214a/" target="_blank"><img src="img/img-link.png" alt="LinkedIn" ></a>
-                
-                
-            </div>
+                <a href="https://github.com/SebazMontoya" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github" aria-label="GitHub"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sebastián-montoya" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-linkedin-in" aria-label="LinkedIn"></i>
+                </a>
+              </div>
 
         </section>
 
@@ -130,25 +137,28 @@
             <h2 class="fw-900">Proyectos</h2>
             <div class="tarjeta-contenedor">
                 <div class="tarjeta-pr">
-                    <img src="img/img-2.png" alt="">
+                    <img src="img/img-2.png" alt="blog">
                     <h3>Blog</h3>
                     <p>Python, Flask, MySql, HTML5, CSS3</p>
-                    <a href="">Ver</a>
+                    <a href="https://github.com/SebazMontoya/PythonFlask_Blog">Ver Más</a>
                 </div>
                 <div class="tarjeta-pr">
-                    <img src="" alt="">
+                    <img src="img/img-2.png" alt="blog">
                     <h3>Acortador de Links</h3>
                     <p>Lenguaje de marcado para la estructura de páginas web.</p>
+                    <a href="">Ver Más</a>
                 </div>
                 <div class="tarjeta-pr">
-                    <img src="" alt="">
+                    <img src="img/img-2.png" alt="blog">
                     <h3>Gestor de Tareas</h3>
                     <p>Desarrollo de interfaces modernas y dinámicas con React.</p>
+                    <a href="">Ver Más</a>
                 </div>
                 <div class="tarjeta-pr">
-                    <img src="" alt="">
+                    <img src="img/img-2.png" alt="blog">
                     <h3>Conversor de Moneda</h3>
                     <p>Lenguaje de programación principal para la web.</p>
+                    <a href="">Ver Más</a>
                 </div>
             </div>
         </section>
@@ -159,10 +169,14 @@
                     <h2>¿Interesado en Colaborar? ¡Hablemos!</h3>
                     <p>Estoy abierto a propuestas laborales o colaboraciones en proyectos de desarrollo web. Si deseas conocer más sobre mi perfil, no dudes en contactarme.</p>
                 </div>
-                <a href="https://wa.me/573001112222" target="_blank" class="btn">
-                    <img src="img/img-mail.png" alt="Gmail" />
-                    <img src="img/img-ws.png" alt="WhatsApp" />
-                  </a>
+                <div class="btn">
+                    <a href="https://wa.me/573242272457" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp" aria-label="Whatsapp"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sebastianmon1245@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope" aria-label="Enviar correo electrónico"></i>
+                    </a>
+                </div>
             </div>
 
         </section>
@@ -171,5 +185,6 @@
     <footer class="contenido-footer">
         <p>&copy; 2025 Sebastián Montoya. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
